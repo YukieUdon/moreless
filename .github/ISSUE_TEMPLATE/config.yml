@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用问题 / 讨论
+    url: https://github.com/YukieUdon/moreless/discussions
+    about: 不确定是不是 bug、想聊用法或产品方向，可以来 Discussions。
+  - name: 安全问题
+    url: https://github.com/YukieUdon/moreless/security/advisories/new
+    about: 请不要公开披露漏洞细节，走私密安全公告。
+  - name: 贡献指南
+    url: https://github.com/YukieUdon/moreless/blob/main/CONTRIBUTING.md
+    about: 环境、命令、产品红线、PR 流程。
