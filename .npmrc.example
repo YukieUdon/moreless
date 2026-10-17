@@ -1,0 +1,3 @@
+# 可选：在中国大陆直连 registry.npmjs.org 很慢时，
+# 复制这个文件为 .npmrc（.npmrc 已被 gitignore），取消下面一行的注释。
+# registry=https://registry.npmmirror.com

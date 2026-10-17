@@ -1,0 +1,67 @@
+name: Bug 报告
+description: 哪里不对、怎么复现
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        先谢谢你来报问题。请尽量写清楚「看到了什么 / 期望什么 / 怎么复现」，有截图更好。
+        如果是安全问题，请不要在这里公开细节，走 [SECURITY.md](https://github.com/YukieUdon/moreless/blob/main/SECURITY.md)。
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台
+      options:
+        - iOS（Expo Go / 安装包）
+        - Android（Expo Go / 安装包）
+        - 浏览器（expo start --web）
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 版本与环境
+      description: App 版本、Expo Go 版本、手机型号 / 系统版本、浏览器版本
+      placeholder: "例如：App v1.0.0，Expo Go 57.0.9，Pixel 8 / Android 16"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开「收支」
+        2. 输入……
+        3. 切换……
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望看到什么
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际看到什么
+      description: 有报错堆栈、截图、录屏就贴上来
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 确认
+      options:
+        - label: 我搜过现有 Issue，没有重复
+          required: true
+        - label: 这不是安全问题（安全问题走 SECURITY.md）
+          required: true
